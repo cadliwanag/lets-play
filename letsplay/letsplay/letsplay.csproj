@@ -14,4 +14,10 @@
   </ItemGroup>
 
 
+  <ItemGroup>
+    <None Remove="Views\Home\Index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\Index.cshtml" />
+  </ItemGroup>
 </Project>

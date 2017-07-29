@@ -10,24 +10,33 @@ namespace letsplay.Controllers
     {
         public IActionResult Index()
         {
+			ViewData["Message"] = "This is your login page.";
+
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "This is your about page.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "This is your contact page.";
 
             return View();
         }
 
-        public IActionResult Error()
+		public IActionResult Login()
+		{
+			ViewData["Message"] = "This is your login page.";
+
+			return View();
+		}
+
+		public IActionResult Error()
         {
             return View();
         }
