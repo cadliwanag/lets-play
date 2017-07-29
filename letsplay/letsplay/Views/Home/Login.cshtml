@@ -18,22 +18,41 @@ class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="~/images/img_avatar.svg" alt="Avatar" class="avatar" width="200" height="40">
-    </div>
-
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required />
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required />
-      <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+    <div>
+			<table>
+				<tr>
+                    <td>
+					    <div class="imgcontainer">
+					      <img src="~/images/img_avatar.svg" alt="Avatar" class="avatar" width="200" height="40" align="right">
+					    </div>
+					</td>
+					<td>
+						<div class="container">
+					      <label><b>Username</b></label>
+					      <input type="text" placeholder="Enter Username" name="uname" required />
+					      <label><b>Password</b></label>
+					      <input type="password" placeholder="Enter Password" name="psw" required />
+					      <button type="submit" class="btn btn-default">Login</button>
+					      <input type="checkbox" checked="checked"> Remember me
+					    </div>
+					</td>               
+                </tr>
+				<tr>
+                    <td colspan="2" align="center">
+						<span class="uname">New user? <a href="#">Register now!</a></span>
+                      </td>
+				</tr>
+				<tr>
+                    <td colspan="2" align="center">
+						<span class="psw">Lost your <a href="#">password?</a></span>
+					</td>
+				</tr>
+				<tr>
+                    <td colspan="2" align="center">
+                        <span class="termsandco">By logging in via any of the options below, you agree to our  <a href="#">Terms of Service.</a></span>
+					</td>
+				</tr>
+			</table>
     </div>
   </form>
 </div>
